@@ -40,6 +40,14 @@
 	<p>This was fun but work, summer and health problems pushed me away and I stopped collaborating with them. I kind of regret though, really; although it was hard for me to keep up. But my experience carries on in my other creative works.</p>
 </p>
 
+{% for post in posts %}
+    <article>
+        <time>published: {{ post.published_date }}</time>
+        <h2><a href="">{{ post.title }}</a></h2>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </article>
+{% endfor %}
+
 <p>
 The next thing to be done on this website is to make a real header, to play around with js and to add my contact/about
 </p>
