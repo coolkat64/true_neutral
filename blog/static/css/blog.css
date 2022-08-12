@@ -1,0 +1,21 @@
+h1 a, h2 a {
+    color: #C25100;
+    font-family: 'Ubuntu';
+}
+
+h1, h4 {
+    font-family: 'Ubuntu';
+}
+
+#header {
+    font-family: 'Ubuntu';
+    padding-bottom: 10px;
+}
+
+#sub_header {
+    font-family: 'Ubuntu';
+}
+
+body {
+    padding-left: 15px;
+}
