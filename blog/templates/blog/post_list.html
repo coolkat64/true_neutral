@@ -8,13 +8,17 @@
         <p>I mainly wrote a series of fictional pilgrimages for many religions in this world, such as a religion worshipping gigantic statues left by the Aelfir which are interpreted as dormant gods.</p>
         <p>This was fun but work, summer and health problems pushed me away and I stopped collaborating with them. I kind of regret though, really; although it was hard for me to keep up. But my experience carries on in my other creative works.</p>
     </p>
-    
+
+    <hr>
+
+    <h3>My articles</h3>
+
     {% for post in posts %}
         <article class="post">
             <time class="date">
                 {{ post.published_date }}
             </time>
-            <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
+            <h4><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
             <p>{{ post.text|linebreaksbr }}</p>
         </article>
     {% endfor %}
