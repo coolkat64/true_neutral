@@ -3,29 +3,21 @@ h1 a, h2 a {
     font-family: 'Ubuntu';
 }
 
-.img-container {
-    max-height: 10px;
-    max-width: 10px;
-  }
-
 #header_container {
     background-color: #e2ac86;
     font-family: 'Ubuntu';
-    padding-top: 20px;
 }
 
 #login {
     float: right;
-    margin-right: 20px;
+    border-style: inset;
+    margin-left: 15px;
 }
 
 #header {
     padding-bottom: 10px;
+    padding-top: 20px;
     margin-left: 15px;
-}
-#header a, a:hover, a:focus, a:active {
-    text-decoration: none;
-    color: inherit;
 }
 
 #sub_header {

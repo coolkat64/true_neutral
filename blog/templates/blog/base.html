@@ -9,10 +9,19 @@
 	</head>
 
 	<body>
-
 		<div id='header_container'>
+			
+			<div id='login'>
+				{% if user.is_authenticated %}
+					<a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+					<p class="top-menu">Hello {{ user.username }} <small>(<a href="{% url 'logout' %}">Log out</a>)</small></p>
+				{% else %}
+					<a href="{% url 'login' %}" class="img-container">{% include './icons/login.svg' %}</a>
+				{% endif %}
+			</div>
+			
 			<div id='header'>
-				<h1>True Neutral</h1>
+				<h1><a href="{% url 'post_list' %}" class="top-menu">True Neutral</a></h1>
 				<h5 class='subtitle'>And other experiences you don't want to happen to you</h5>
 			</div>
 		</div>
